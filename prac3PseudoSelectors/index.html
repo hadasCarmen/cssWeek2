@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <header>
+        <h1>CSS Grid Learning</h1>
+        <ul>
+          <li>
+            <a href="Home">Home</a>
+          </li>
+          <li>
+            <a href="./page2.html">Gallery</a>
+          </li>
+        </ul>
+      </header>
+      <aside>
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="Getting Started">Getting Started</a></li>
+          <li><a href="Grid Basics">Grid Basics</a></li>
+          <li><a href="Grid Properties">Grid Properties</a></li>
+          <li><a href="Examples">Examples</a></li>
+        </ul>
+      </aside>
+      <main>
+        <h2>Contact Form with Pseudo Selectors</h2>
+        <p>
+          This form demonstrates various CSS pseudo selectors:
+          <strong>:hover</strong
+          >,<strong>:active</strong>,<strong>:focus</strong>, and
+          <strong>:nth-child</strong>.
+        </p>
+        <form action="">
+          <fieldset>
+            <label for="name">Full Name: </label>
+            <input type="text" name="name" id="name" required />
+          </fieldset>
+          <fieldset>
+            <label for="email">Email Address: </label>
+            <input type="email" name="email" id="email" required />
+          </fieldset>
+          <fieldset>
+            <label for="telNo">Phone number: </label>
+            <input id="telNo" name="telNo" type="tel" />
+          </fieldset>
+          <fieldset>
+            <label for="subject">Subject: </label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="What is this about?"
+              required=""
+            />
+          </fieldset>
+          <fieldset>
+            <label for="message">Message: </label>
+            <textarea name="message" id="message">
+Type your massage here...</textarea
+            >
+          </fieldset>
+          <fieldset>
+            <label for="priorityLevel">Priority Level: </label>
+            <select name="priorityLevel" id="priorityLevel">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="Hard">Hard</option>
+              <option value="Urgent">Urgent</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <div>
+              <input type="checkbox" name="newsletter" />
+              <label for="newsletter"> Subscribe to newsletter </label>
+            </div>
+            <div>
+              <input type="checkbox" name="conditions" required />
+              <label for="conditions"> I agree to terms and conditions</label>
+            </div>
+          </fieldset>
+          <button type="submit" disabled>Sumbit Form</button>
+          <button>Reset Form</button>
+        </form>
+        <section>
+          <h3>Pseudo Selectors Used:</h3>
+          <ul>
+            <li>
+              <strong>:hover</strong> - Applied to buttons and inputs when you
+              mouse over them
+            </li>
+            <li>
+              <strong>:focus</strong> - Applied to inputs when you click or tab
+              into them
+            </li>
+            <li>
+              <strong>:active</strong> - Applied to buttons when you click and
+              hold them
+            </li>
+            <li>
+              <strong>:disabled</strong> - Applied to the submit button to show
+              it's disabled
+            </li>
+            <li>
+              <strong>:visited</strong> - Applied to navigation links you've
+              already visited
+            </li>
+            <li>
+              <strong>:nth-child</strong> - Applied to style specific form
+              groups differently
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer>
+        <p>© 2024 CSS Grid Exercise | Learning Resource for Students</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -39,3 +39,22 @@ body{
 .b {
   grid-row: span 2; /* spans 2 rows */
 }
+.try3{
+  /* Link states */
+/* a:hover { color: red; }           
+ /* a:active { color: green; }       
+ /* a:visited { color: rgb(65, 217, 255); }      
+/* a:link { color: darkgoldenrod; }             
+
+/* Form states */
+/* input:focus { border: 5px solid rgb(5, 223, 103); }   */
+/* input:disabled { opacity: 0.5; background: #4caf50;}          */
+/* input:checked { background: green; }  
+
+/* Structural pseudo-classes */
+li:first-child { font-weight: bold; }           /* First child */
+li:last-child { color: red; }                   /* Last child */
+li:nth-child(2) { color: blue; }                /* Second child */
+li:nth-child(odd) { background: #f0f0f0; }      /* Odd children */
+li:nth-child(even) { background: #ffffff; }     /* Even children */
+}
