@@ -1,3 +1,4 @@
+
 * {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -14,6 +15,7 @@
   box-shadow: 3px 3px 5px rgb(201, 197, 197);
 }
 header {
+position: relative;
   color: white;
   grid-column: span 2;
   display: flex;
@@ -101,4 +103,60 @@ footer {
 }
 * {
   border-radius: 15px;
+}
+
+#screen-size{
+    position: absolute ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Large Desktop */
+@media (min-width: 1441px) {
+    #screen-size::after {
+        content: "Large Desktop";
+    }
+
+    main {
+        width: 60rem;
+    }
+}
+
+
+/* Desktop */
+@media (max-width: 1440px) {
+    #screen-size::after {
+        content: "Desktop";
+    }
+
+    main {
+        width: 100%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1023px) {
+    #screen-size::after {
+        content: "Tablet";
+    }
+
+   
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    #screen-size::after {
+        content: "Mobile";
+    }
+
+
+    aside {
+        /* opacity: 0; */
+        display: none;
+    }
+    
+    main{
+         grid-column: span 2;   
+        }
 }
