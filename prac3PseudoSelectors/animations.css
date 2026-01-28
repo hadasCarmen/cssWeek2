@@ -101,25 +101,7 @@ body {
  animation:Pulse 1s infinite ease-in-out; 
  background-color: green;  
 }
-@keyframes Pulse {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
 
-  50% {
-    transform: scale(1.2);
-    opacity: 0.7;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-.pulse-element {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    animation: pulse 2s ease-in-out infinite;
-}
 
 @keyframes pulse {
     0% {
