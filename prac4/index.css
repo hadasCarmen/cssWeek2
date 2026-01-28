@@ -1,0 +1,86 @@
+header {
+  display: flex;
+
+  /* p:nth-first-child{
+    
+    } */
+  justify-content: space-between;
+  #translate:hover {
+    transform: translate(10rem, 5rem);
+    background-color: green;
+    transition: 4s ease;
+  }
+  #translate {
+    padding: 10rem;
+    background-color: forestgreen;
+    transition: all 4s;
+  }
+  #rotate:hover {
+    transform: rotate(180000deg);
+    background-color: blueviolet;
+    transition: background-color 15s 500ms;
+    margin: 3rem;
+    transition: 4s ease-in-out;
+  }
+  #rotate {
+    padding: 10rem;
+    background-color: aqua;
+    transition: all 10s;
+  }
+  #scale:active {
+    transform: scale(2, 2);
+    transition: 200ms linear 50ms;
+  }
+  #scale {
+    padding: 10rem;
+    background-color: khaki;
+    transition: all 2s;
+  }
+}
+@keyframes grow-and-ahrink {
+  0%,
+  50%,
+  100% {
+    transform: scale(5); /* Original size */
+  }
+  25%,
+  75% {
+    transform: scale(7.5); /* Scale up to 1.5 times the size */
+  }
+}
+.imojy {
+  margin: 12rem;
+  width: 100px;
+  height: 100px;
+  font-size: xx-large;
+  animation-name: grow-and-ahrink;
+  animation-duration: 2s; /* The animation takes 2 seconds to complete */
+  animation-iteration-count: infinite; /* The animation repeats indefinitely */
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+@media (min-width: 1441px) {
+}
+
+/* Desktop */
+@media (max-width: 1440px) {
+}
+
+/* Tablet */
+@media (max-width: 1023px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  
+}
+
