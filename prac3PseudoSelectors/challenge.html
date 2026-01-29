@@ -1,0 +1,302 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Comprehensive Challenge</title>
+    <link rel="stylesheet" href="./challenge.css">
+</head>
+<body>
+    <div class="challenge-page">
+        <!-- Navigation Bar (Flexbox) -->
+        <nav class="challenge-navbar">
+            <div class="logo">
+                <span class="logo-icon">🎯</span>
+                <h1>CSS Challenge</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./ ry.html">Gallery</a></li>
+                <li><a href="./animations.html">Animations</a></li>
+                <li><a href="./challenge.html" class="active">Challenge</a></li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </nav>
+
+        <!-- Hero Section (Flexbox + Animations) -->
+        <header class="hero-section">
+            <div class="hero-content">
+                <h2 class="hero-title">Master CSS Fundamentals</h2>
+                <p class="hero-subtitle">A comprehensive exercise combining Grid, Flexbox, Animations, Transitions, Pseudo-selectors & Responsivity</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">Get Started</button>
+                    <button class="btn-secondary">Learn More</button>
+                </div>
+            </div>
+            <div class="hero-animation">
+                <div class="floating-box box-1"></div>
+                <div class="floating-box box-2"></div>
+                <div class="floating-box box-3"></div>
+            </div>
+        </header>
+
+        <!-- Stats Section (Grid + Flexbox) -->
+        <section class="stats-section">
+            <div class="stat-card">
+                <div class="stat-icon">📊</div>
+                <h3 class="stat-number">1,234</h3>
+                <p class="stat-label">Students Learning</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">✅</div>
+                <h3 class="stat-number">567</h3>
+                <p class="stat-label">Exercises Completed</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🏆</div>
+                <h3 class="stat-number">89%</h3>
+                <p class="stat-label">Success Rate</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">⭐</div>
+                <h3 class="stat-number">4.8</h3>
+                <p class="stat-label">Average Rating</p>
+            </div>
+        </section>
+
+        <!-- Features Grid (Complex Grid Layout) -->
+        <section class="features-section">
+            <h2 class="section-title">What You'll Master</h2>
+            <div class="features-grid">
+                <article class="feature-card feature-large">
+                    <div class="feature-icon">🎨</div>
+                    <h3>CSS Grid Mastery</h3>
+                    <p>Learn to create complex layouts with grid-template-areas, grid-column, grid-row, and span properties.</p>
+                    <ul class="feature-list">
+                        <li>Grid Template Areas</li>
+                        <li>Column & Row Spanning</li>
+                        <li>Auto-fit & Auto-fill</li>
+                    </ul>
+                    <button class="feature-btn">Start Learning</button>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">📦</div>
+                    <h3>Flexbox Layouts</h3>
+                    <p>Master flexible box layouts for responsive designs.</p>
+                    <button class="feature-btn">Explore</button>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Responsive Design</h3>
+                    <p>Create layouts that adapt to any screen size.</p>
+                    <button class="feature-btn">Explore</button>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Animations</h3>
+                    <p>Bring your designs to life with keyframe animations.</p>
+                    <button class="feature-btn">Explore</button>
+                </article>
+
+                <article class="feature-card feature-tall">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Pseudo Selectors</h3>
+                    <p>Master :hover, :active, :focus, :nth-child and more.</p>
+                    <div class="pseudo-examples">
+                        <span class="example-tag">:hover</span>
+                        <span class="example-tag">:focus</span>
+                        <span class="example-tag">:active</span>
+                        <span class="example-tag">:first-child</span>
+                        <span class="example-tag">:last-child</span>
+                        <span class="example-tag">:nth-child</span>
+                    </div>
+                    <button class="feature-btn">Explore</button>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Transitions</h3>
+                    <p>Smooth state changes with CSS transitions.</p>
+                    <button class="feature-btn">Explore</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- Interactive Form Section (Flexbox + Pseudo Selectors + Transitions) -->
+        <section class="interactive-section">
+            <h2 class="section-title">Interactive Form Challenge</h2>
+            <div class="form-container">
+                <form class="challenge-form">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" placeholder="Enter username" required>
+                            <span class="input-icon">👤</span>
+                        </div>
+                        <div class="input-group">
+                            <label for="email-challenge">Email</label>
+                            <input type="email" id="email-challenge" placeholder="your@email.com" required>
+                            <span class="input-icon">📧</span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="••••••••" required>
+                            <span class="input-icon">🔒</span>
+                        </div>
+                        <div class="input-group">
+                            <label for="skill-level">Skill Level</label>
+                            <select id="skill-level">
+                                <option>Beginner</option>
+                                <option>Intermediate</option>
+                                <option>Advanced</option>
+                                <option>Expert</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-group full-width">
+                        <label for="bio">About You</label>
+                        <textarea id="bio" rows="4" placeholder="Tell us about your CSS journey..."></textarea>
+                    </div>
+
+                    <div class="checkbox-container">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="interest1">
+                            <span>Grid Layouts</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="interest2">
+                            <span>Flexbox</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="interest3">
+                            <span>Animations</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="interest4">
+                            <span>Responsive Design</span>
+                        </label>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">Submit Challenge</button>
+                        <button type="reset" class="reset-btn">Reset</button>
+                    </div>
+                </form>
+
+                <div class="form-info">
+                    <h3>Form Features</h3>
+                    <ul class="info-list">
+                        <li>✓ Input focus effects</li>
+                        <li>✓ Hover transitions</li>
+                        <li>✓ Custom checkboxes</li>
+                        <li>✓ Responsive layout</li>
+                        <li>✓ Icon integration</li>
+                        <li>✓ Validation states</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Animated Cards Gallery (Grid + Animations + Transitions) -->
+        <section class="cards-gallery">
+            <h2 class="section-title">Skill Cards Gallery</h2>
+            <div class="cards-grid">
+                <div class="skill-card card-flip">
+                    <div class="card-front">
+                        <div class="card-icon">🎨</div>
+                        <h4>Design</h4>
+                    </div>
+                </div>
+                <div class="skill-card card-zoom">
+                    <div class="card-icon">💻</div>
+                    <h4>Development</h4>
+                </div>
+                <div class="skill-card card-slide">
+                    <div class="card-icon">🚀</div>
+                    <h4>Performance</h4>
+                </div>
+                <div class="skill-card card-rotate">
+                    <div class="card-icon">📊</div>
+                    <h4>Analytics</h4>
+                </div>
+                <div class="skill-card card-pulse">
+                    <div class="card-icon">🔒</div>
+                    <h4>Security</h4>
+                </div>
+                <div class="skill-card card-bounce">
+                    <div class="card-icon">⚡</div>
+                    <h4>Speed</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pseudo Selector Playground -->
+        <section class="playground-section">
+            <h2 class="section-title">Pseudo Selector Playground</h2>
+            <div class="playground-grid">
+                <div class="playground-item">
+                    <h4>Hover Effects</h4>
+                    <div class="demo-box hover-demo">Hover Me!</div>
+                </div>
+                <div class="playground-item">
+                    <h4>Active State</h4>
+                    <div class="demo-box active-demo">Click & Hold!</div>
+                </div>
+                <div class="playground-item">
+                    <h4>First/Last Child</h4>
+                    <ul class="child-demo">
+                        <li>First Item</li>
+                        <li>Middle Item</li>
+                        <li>Middle Item</li>
+                        <li>Last Item</li>
+                    </ul>
+                </div>
+                <div class="playground-item">
+                    <h4>Nth-Child Patterns</h4>
+                    <div class="nth-demo">
+                        <span>1</span><span>2</span><span>3</span>
+                        <span>4</span><span>5</span><span>6</span>
+                        <span>7</span><span>8</span><span>9</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer (Flexbox) -->
+        <footer class="challenge-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>CSS Challenge</h4>
+                    <p>Master CSS fundamentals through hands-on exercises</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">📘</a>
+                        <a href="#" class="social-icon">🐦</a>
+                        <a href="#" class="social-icon">📷</a>
+                        <a href="#" class="social-icon">💼</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CSS Challenge | Comprehensive Learning Exercise</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

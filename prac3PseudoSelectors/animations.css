@@ -135,10 +135,7 @@ body {
         opacity: 1;
     }
 }
-.pulse-element {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    animation: pulse 2s ease-in-out infinite;
-}
+
 .bounce-element {
     background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
     animation: bounce 1.5s ease-in-out infinite;
