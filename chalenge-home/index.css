@@ -1,48 +1,84 @@
-header{
-    text-align: center;
+header {
+  text-align: center;
 }
-main{
-    margin: 0 20%;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    *{
-        margin: 0.25rem;
-        margin-bottom: 0;
-        border-radius: 1rem;
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 0.1rem;
-        justify-content: space-between;
-        /* align-items: center; */
+main {
+  margin: 0 20%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  * {
+    margin: 0.25rem;
+    margin-bottom: 0;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.1rem;
+    justify-content: space-between;
+    /* align-items: center; */
+  }
+  .first {
+    grid-column: span 2;
+    grid-row: span 2;
+    ul {
+      align-self: flex-start;
+      padding-left: 0.3rem;
+      align-items: start;
     }
-    .first{
-        grid-column: span 2;
-        grid-row: span 2;
-        ul{
-            align-self: flex-start;
-            padding-left: 0.3rem;
-            align-items: start;
-        }
+  }
+  .five span {
+    background-color: greenyellow;
+    padding: 0.23rem;
+  }
+  .five {
+    grid-row: span 2;
+    * {
+      display: inline-block;
     }
-    .five span{
-        background-color: greenyellow;
-        padding: 0.23rem;
-    }
-    .five{
-        grid-row: span 2;
-        *{
-            display: inline-block;
-        }
-    }
-    .gray{
-        background: linear-gradient(135deg, rgb(245, 247, 250) 0%, rgb(195, 207, 226) 100%);
-    }
-    button{
-        width: 90%;
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
-    .span-one{
-        gap: 0.5rem;
-    }
+  }
+  .gray {
+    background: linear-gradient(
+      135deg,
+      rgb(245, 247, 250) 0%,
+      rgb(195, 207, 226) 100%
+    );
+  }
+  button {
+    width: 90%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .span-one {
+    gap: 0.5rem;
+  }
+  button:hover {
+    animation-name: grow-and-ahrink;
+    animation-duration: 2s; /* The animation takes 2 seconds to complete */
+    animation-iteration-count: infinite; /* The animation repeats indefinitely */
+  }
+}
+@keyframes grow-and-ahrink {
+  0%,
+  50%,
+  100% {
+    transform: scale(1); /* Original size */
+  }
+  25%,
+  75% {
+    transform: scale(2.5); /* Scale up to 1.5 times the size */
+  }
+}
+.five span:hover {
+  animation-name: rotate;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+}
+@keyframes rotate {
+  0%,
+  50%,
+  100% {
+    transform: rotate(90deg); /* Original size */
+  }
+  25%,
+  75% {
+    transform: rotate(180deg); /* Scale up to 1.5 times the size */
+  }
 }
